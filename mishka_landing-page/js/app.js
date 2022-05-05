@@ -13,3 +13,22 @@ function isWebp() {
   });
 }
 isWebp();
+
+// header burger
+const header = document.querySelector(".header");
+const logoWrapper = document.querySelector(".header__logo-wrapper");
+const burgerBtn = document.querySelector(".header__burger");
+let headerHeight = header.offsetHeight;
+
+const activeHeader = (isActive) => {
+  if (isActive) {
+    header.style.maxHeight = headerHeight + "px";
+  } else {
+    header.style.maxHeight = logoWrapper.offsetHeight + "px";
+  }
+};
+activeHeader(header.classList.contains("_active"));
+burgerBtn.addEventListener("click", function () {
+  header.classList.toggle("_active");
+  activeHeader(header.classList.contains("_active"));
+});
