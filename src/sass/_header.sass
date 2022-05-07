@@ -1,55 +1,4 @@
 .header
-  position: relative
-  overflow-x: hidden
-  overflow-y: hidden
-  transition: all .3s ease
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  &__container
-    max-width: 100%
-    width: 100%
-    padding: 0
-  &__row
-    justify-content: space-between
-    align-items: center
-    flex-wrap: wrap
-    flex-direction: column
-  &__logo
-    align-self: center
-    margin: 0 auto
-    &_wrapper
-      width: 100%
-      order: 1
-      position:  relative
-      padding: 22px 30px
-      justify-content: space-between
-    &_svg
-      width: 149px
-      height: 72px
-      display: block
-    &_text
-      fill: $black
-    &_bg
-      fill: transparent
-    &_bg2
-      fill: transparent
-    &_underline
-      fill: $black
-  &__link
-    font-family: 'Open Sans'
-    font-style: normal
-    font-weight: 700
-    font-size: 17px
-    line-height: 141%
-    color: $black
-    display: block
-    padding: 28.5px 5px 26.5px 70px
-    position: relitve
-    border-top: 1px solid #ECECEC
-    flex: 1 1 100%
-    position: relative
   &__burger
     width: 20px
     height: 14px
@@ -93,30 +42,3 @@
       opacity: 1
     &::before
       display: none
-      
-  &__nav
-    order: 2
-    flex-wrap: wrap
-    width: 100%
-  &__cart
-    order: 3
-    flex-wrap: wrap
-    width: 100%
-    
-
-.nav
-  &__link
-    
-.cart
-  &__link
-    &_text
-      position: relative
-    &_svg
-      position: absolute
-      top: calc(50% + 1px)
-      left: -30px
-      transform: translateY(-50%)
-      fill: $black
-      opacity: .2
-      width: 18px
-      height: 18px
