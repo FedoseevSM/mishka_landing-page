@@ -1,0 +1,134 @@
+//
+// * Адаптивная вёрстка (по умолчанию 320px)
+//
+@media (max-width: 767px)
+  ._active
+    max-height: 436px !important
+  .header
+    background-color: #fff
+    border-bottom: 1px solid #ECECEC
+    &__nav
+      flex-wrap: wrap
+    &__cart
+      flex-wrap: wrap
+    &__subnuv
+      display: none
+  .container
+    padding: 0 30px
+  ._container-header
+    padding: 0 !important
+//
+// ? от 768 px
+//
+@media (min-width: 768px)
+  ._onscroll
+    height: 117px !important
+  .nav
+    &__top
+      font-size: 15px !important
+  .header
+    max-height: 175px !important
+    height: 175px 
+    &__link
+      padding: 0
+      display: inline-block
+      border: 0
+      font-size: 17px
+    &__nav
+      flex-wrap: no-wrap
+      margin-top: 112px
+    &__nav span
+      margin-left: 0
+    &__cart
+      order: -1
+      background-color: transparent
+      flex-wrap: no-wrap !important
+      flex-direction: row
+      width: 387px
+      position: relative
+      top: 45px
+      margin-left: auto
+      z-index: 5
+    &__nav
+      width: 400px
+      margin-right: auto
+      background-color: transparent
+      z-index: 5
+    &__nav a
+      margin-left: 0 !important
+    &__burger
+      display: none
+    &__logo
+      margin: 0
+    &__logo_wrapper
+      position: absolute
+      border-bottom: 1px solid #ECECEC
+      background-color: #fff
+    // &__logo_svg
+    //   position: relative
+    //   right: 14px
+    &__subnuv
+      width: 100%
+      max-width: 1150px
+      justify-content: space-between
+      position: absolute
+      top: 134px
+      padding: 0 50px
+    &__subnuv_block
+      display: none
+    &__shipping
+      margin-left: auto
+    &__shipping span
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 15px
+      line-height: 24px
+      color: #444444
+
+  .footer
+    width: 100%
+    padding: 0
+    &__inner
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      min-height: 143px
+      margin-top: -5px
+      align-items: center
+    &__logo
+      display: block
+    &__logo img
+      vertical-align: middle
+    &__social
+      border: none
+    &__social ul
+      margin-bottom: 0
+    &__copyright
+      margin: 0
+//
+//
+//
+// ? от 1150 px
+//
+@media (min-width: 1150px)
+  .header
+    &__logo_wrapper
+      justify-content: center
+    &__nav
+      margin-top: 21px
+    &__subnuv_block
+      display: block
+    &__link
+      font-size: 17px
+    // &__logo_svg
+    //   position: static
+  .nav
+    &__link span
+      margin-right: 45px
+    &__top
+      font-size: 17px !important
+    &__sub
+      font-size: 15px
+//
+//
