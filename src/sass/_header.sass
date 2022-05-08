@@ -42,14 +42,13 @@
     font-style: normal
     font-weight: 700
     font-size: 17px
-    line-height: 141%
+    line-height: 24px
     color: $black
     display: block
-    padding: 28.5px 5px 26.5px 70px
+    padding: 28.5px 5px 26.5px calc(50% - 105px)
     position: relitve
     border-top: 1px solid #ECECEC
     flex: 1 1 100%
-    position: relative
   &__burger
     width: 20px
     height: 14px
@@ -96,12 +95,17 @@
       
   &__nav
     order: 2
-    flex-wrap: wrap
     width: 100%
+    background-color: #fff
+  &__nav span
+    margin-left: 12px
+
   &__cart
     order: 3
-    flex-wrap: wrap
     width: 100%
+    background-color: #fff
+  &__cart span
+    padding-left: 12px
     
 
 .nav
