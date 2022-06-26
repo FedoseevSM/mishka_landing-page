@@ -1,0 +1,348 @@
+.form
+    &__btn
+        padding: 18px 0 !important
+        line-height: 16px
+        @media (min-width: 768px)
+            order: -1
+            width: 230px
+    &__header
+        font-weight: 400
+        font-size: 13px
+        line-height: 24px
+        color: #444444
+        @media (min-width: 768px)
+            font-weight: 400
+            font-size: 17px
+            line-height: 30px
+            margin-bottom: 50px
+        @media (min-width: 1150px)
+            position: relative
+            left: 43px
+            width: 810px
+    &__required
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        color: #444
+        margin-bottom: 30px
+        @media (min-width: 768px)
+            order: 2
+            flex-shrink: 0
+            font-size: 17px
+            line-height: 30px
+    &__block
+        display: flex
+        flex-direction: column
+        align-content: start
+        align-items: first baseline
+        @media (min-width: 768px)
+            display: flex
+            flex-direction: row
+            align-content: start
+            align-items: first baseline
+    &__title
+        font-weight: 700
+        font-size: 17px
+        line-height: 16px
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        color: #63D1BB
+        width: 57px
+        margin-right: 103px
+        margin-bottom: 30px
+        margin-top: 30px
+        &::after
+            width: calc( 100% - 120px )
+            content: ''
+            position: absolute
+            background: #63D1BB
+            height: 1px
+            margin-left: 60px
+        @media (min-width: 768px)
+            font-weight: 700
+            font-size: 17px
+            line-height: 16px
+            display: flex
+            align-items: center
+            text-transform: uppercase
+            color: #63D1BB
+            width: 66px
+            margin-right: 103px
+            align-self: flex-start
+            &::after
+                content: ''
+                display: none
+    &__title-second
+        font-weight: 700
+        font-size: 17px
+        line-height: 16px
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        color: #63D1BB
+        margin-right: 103px
+        margin-bottom: 4.5px
+        margin-top: 30px
+        &::after
+            width: calc( 100% - 140px )
+            content: ''
+            position: absolute
+            background: #63D1BB
+            height: 1px
+            margin-left: 80px
+        @media (min-width: 768px)
+            width: 198px
+            margin-right: 0
+            &::after
+                content: ''
+                display: none
+        @media (min-width: 1150px)
+            margin-right: -10px
+    &__input
+        display: flex
+        flex-direction: column
+        width: 100%
+        label
+            font-weight: 700
+            font-size: 17px
+            line-height: 18px
+        @media (min-width: 768px)
+            display: flex
+            flex-direction: column
+            padding-top: 15px
+            .phone-ico
+                padding-right: 26px
+            .email-ico
+                padding-right: 22px
+        @media (min-width: 1150px)
+            margin-left: -63px
+    &__name
+        margin-bottom: 5px
+        margin-top: 0px
+    &__family
+        margin-bottom: 5px
+        margin-top: 22px
+    &__surname
+        margin-bottom: 5px
+        margin-top: 22px
+    &__text
+        border: 0
+        border-bottom: 2px solid #000
+        font-weight: 400
+        font-size: 17px
+        line-height: 18px
+        height: 48px
+        @media (min-width: 768px)
+            background-color: transparent
+            padding-left: 17px
+    &__textarea
+        border: 2px solid #444
+        font-weight: 400
+        font-size: 17px
+        line-height: 18px
+        padding: 17px
+    &__fullname
+        display: flex
+        flex-direction: column
+        width: 100%
+        @media (min-width: 768px)
+            display: flex
+            flex-direction: row
+            width: 100%
+            align-items: baseline
+            margin-bottom: 24px
+            &:nth-last-child(1)
+                margin: 0
+            label
+                margin-right: 24px
+                width: 115px
+            input
+                width: 100%
+//! /.form
+// .form-main
+//     padding: 17px 0 55px 0
+//     @media (min-width: 768px)
+//         padding: 54px 0 55px 0
+//     @media (min-width: 1150px)
+//         padding: 98px 0 55px 0
+//! /.form-main
+.block-input-second
+    display: grid !important
+    grid-template-columns: repeat( 1, minmax(200px, 1fr) )
+    @media (min-width: 768px)
+        grid-template-columns: repeat( 2, minmax(200px, 1fr) )
+    @media (min-width: 1150px)
+        grid-template-columns: repeat( 3, minmax(200px, 1fr) )
+//! /.block-input-second
+.phone-ico
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.2'%3e%3cpath d='M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z' fill='black'/%3e%3cpath d='M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z' fill='black'/%3e%3cpath d='M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z' fill='black'/%3e%3cpath d='M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z' fill='black'/%3e%3c/g%3e%3c/svg%3e ")
+    background-repeat: no-repeat
+    background-position: center right
+    background-origin: content-box
+    padding-right: 7px
+//! /.phone-ico
+.email-ico
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='21' viewBox='0 0 32 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath opacity='0.2' d='M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z' fill='black'/%3e%3c/svg%3e ")
+    background-repeat: no-repeat
+    background-position: center right
+    background-origin: content-box
+    padding-right: 3px
+//! /.email-ico
+.block-first
+    &__text
+        display: flex
+        flex-direction: row
+        align-items: center
+        cursor: pointer
+    label
+        margin-bottom: 11px
+        font-weight: 700
+        font-size: 17px
+        line-height: 18px
+        &:nth-last-child(1)
+            margin: 0
+        p
+            display: inline-block
+    input[type="checkbox"] 
+        display: none
+    input[type="checkbox"] + label span 
+        display: inline-block
+        width: 42px
+        height: 42px
+        margin: -1px 4px 0 0
+        vertical-align: middle
+        background-color: #fff
+        border: 2px solid #444
+        border-radius: 50%
+        position: relative
+        margin-right: 19px
+        flex-shrink: 0
+    input[type="checkbox"]:checked + label span
+        &::after
+            content: ''
+            background: #62D1BA
+            width: 18px
+            height: 18px
+            display: inline-block
+            position: relative
+            border-radius: 50%
+            bottom: calc( 50% - 29px )
+            left: 10px
+    @media (min-width: 768px)
+        margin-bottom: 50px
+        label
+            margin-bottom: 24px
+        input[type="checkbox"] 
+            display: none
+        input[type="checkbox"] + label span 
+            display: inline-block
+            width: 52px
+            height: 52px
+            margin: -1px 4px 0 0
+            vertical-align: middle
+            background-color: #fff
+            border: 2px solid #444
+            border-radius: 50%
+            cursor: pointer
+            position: relative
+            margin-right: 26px
+        input[type="checkbox"]:checked + label span
+            &::after
+                content: ''
+                background: #62D1BA
+                width: 18px
+                height: 18px
+                display: inline-block
+                position: relative
+                border-radius: 50%
+                bottom: calc( 50% - 39px )
+                left: 15px
+//! ./block-first
+.block-second
+    &__text
+        display: flex
+        flex-direction: row
+        align-items: center
+        cursor: pointer
+    label
+        margin-bottom: 23px
+        &:nth-last-child(1)
+            margin: 0
+    input[type="checkbox"] 
+        display: none
+    input[type="checkbox"] + label span 
+        display: inline-block
+        width: 38px
+        height: 38px
+        margin: -1px 4px 0 0
+        vertical-align: middle
+        background: #fff
+        border: 2px solid #444
+        margin-right: 23px
+    input[type="checkbox"]:checked + label span
+        &::after
+            content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='23' height='16' viewBox='0 0 33 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M32.3704 1.35683L31.0098 0L11.5739 19.2863L1.95311 9.69163L0.59259 11.0485L10.2134 20.6432L11.5739 22L13.0316 20.6432L32.3704 1.35683Z' fill='black'/%3e%3c/svg%3e ")
+            display: inline-block
+            position: relative
+            border-radius: 50%
+            bottom: calc( 50% - 26px )
+            left: calc( 50% - 11px )
+    @media (min-width: 768px)
+        background-color: #F1F1F1
+        padding: 50px 0
+        label
+            margin-bottom: 23px
+            &:nth-last-child(1)
+                margin-bottom: 23px
+        input[type="checkbox"] 
+            display: none
+        input[type="checkbox"] + label span 
+            display: inline-block
+            width: 52px
+            height: 52px
+            margin: -1px 4px 0 0
+            vertical-align: middle
+            background: transparent
+            border: 2px solid #444
+            cursor: pointer
+            margin-right: 30px
+        input[type="checkbox"]:checked + label span
+            &::after
+                content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='33' height='22' viewBox='0 0 33 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M32.3704 1.35683L31.0098 0L11.5739 19.2863L1.95311 9.69163L0.59259 11.0485L10.2134 20.6432L11.5739 22L13.0316 20.6432L32.3704 1.35683Z' fill='black'/%3e%3c/svg%3e ")
+                display: inline-block
+                position: relative
+                border-radius: 50%
+                bottom: calc( 50% - 36px )
+                left: calc( 50% - 16px )
+//! /.block-second
+.block-third
+    @media (min-width: 768px)
+        padding: 50px 0
+        margin: 0
+//! /.block-third
+.block-fourth
+    @media (min-width: 768px)
+        background-color: #f1f1f1
+        padding: 50px 0 24px 0
+//! /.block-fourth
+.block-fifth
+    @media (min-width: 768px)
+        background-color: #f1f1f1
+        padding-bottom: 50px
+//! /.block-fifth
+.block-sixth
+    margin-bottom: 17px
+    @media (min-width: 768px)
+        padding: 50px 0
+        margin: 0
+//! /.block-sixth
+.block-seventh
+    @media (min-width: 768px)
+        align-items: last baseline
+        justify-content: space-between
+//! /.block-seventh
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

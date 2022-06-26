@@ -2,37 +2,55 @@
   margin-top: auto
   background-color: $bgFooter
   padding: 25px 0 0 0
+  @media (min-width: 768px)
+    width: 100%
+    padding: 0
   &__inner
-      margin: 0 auto
+    @media (min-width: 768px)
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      min-height: 143px
+      margin-top: -5px
+      align-items: center
   &__logo
     display: none
-  &__logo
-    &_hoover
-      fill: #000
-    &_hoover:hover
-      fill: #46C1AE
-    &_hoover:active
-      fill: #46C1AE
-      opacity: 0.3
-    &_academy
-      fill: #63D1BB
-    &_academy:hover
-      fill: #46C1AE
-    &_academy:active
-      fill: #46C1AE
-      opacity: 0.3
+    @media (min-width: 768px)
+      display: block
+  &__ico-logo
+    fill: #000
+    width: 102px
+    height: 34px
+  &__ico-inst
+    fill: #000
+    width: 23px
+    height: 22px
+  &__ico-fb
+    fill: #000
+    width: 16px
+    height: 30px
+  &__ico-twit
+    fill: #000
+    width: 25px
+    height: 20px
+  &__ico-academy
+    fill: #63D1BB
+    width: 27px
+    height: 34px
   &__social
     border-bottom: 1px solid #E5E5E5
-  &__social ul
+    @media (min-width: 768px)
+      border: none
+  &__list
     display: flex
     flex-direction: row
     justify-content: center
     margin-bottom: 27px
-  &__social img, svg
-    vertical-align: middle
-  &__social li
+    @media (min-width: 768px)
+      margin-bottom: 0
+  &__list-item
     margin-right: 41px
-  &__social li:last-child
+  &__list-item:last-child
     margin-right: 0
   &__copyright
     font-family: 'Open Sans'
@@ -43,10 +61,15 @@
     display: flex
     justify-content: center
     margin: 22px 0
-  &__copyright span
+    align-items: baseline
+    @media (min-width: 768px)
+      margin: 0
+  &__copyright-title
     display: inline-block
     padding-right: 27px
-    vertical-align: middle
     color: #000
-  &__copyright img, svg
-    vertical-align: middle
+//! /.footer
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

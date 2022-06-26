@@ -1,6 +1,5 @@
-@import "variables"
-@import "mixins"
-@import "fonts"
+@import "_variables"
+@import "_fonts"
 
 
 *,
@@ -8,8 +7,11 @@
 *::before
   text-decoration: none
   box-sizing: border-box
+  font-family: 'Open Sans'
+  margin: 0
+  padding: 0
 
-button
+button, input[type=submit]
   outline: none
   border: none
   background: none
@@ -39,7 +41,6 @@ body
   margin: 0
   padding: 0
   position: relative
-  font-family: 'OpenSans'
   font-style: normal
   font-weight: 400
   font-size: 17px
@@ -50,17 +51,22 @@ body
   display: flex
   flex-direction: column
 
-.section
-  display: block
-  padding-top: 30px
-  padding-bottom: 30px
+// .section
+//   display: block
+//   padding-top: 30px
+//   padding-bottom: 30px
 
-@import "blocks"
-@import "header"
-@import "hero"
-@import "product"
-@import "about"
-@import "reviews"
-@import "contact"
-@import "footer"
-@import "media"
+@import "_blocks"
+@import "_header"
+@import "_hero"
+@import "_product"
+@import "_about"
+@import "_reviews"
+@import "_contacts"
+@import "_footer"
+@import "_page-title"
+@import "_form-main"
+@import "_catalog-main"
+@import "_styleguide"
+@import "_media"
+@import "_modal"

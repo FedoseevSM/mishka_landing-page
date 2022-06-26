@@ -1,2 +1,111 @@
 .hero
-  background: url("@img/hero-desktop.png") 0 0/cover no-repeat $bgColor
+  min-height: 502px !important
+  display: flex
+  justify-content: center
+  width: auto
+  position: relative
+  background-color: #F9F9F9
+  // border-image: url(../img/zigzag-fill-desktop.svg) 0 0 100%
+  // border-bottom: 20px solid #fff
+  // border-image-repeat: round
+  @media (max-width: 767px)
+    border: 0
+  &::after
+    content: ''
+    border-image: url(../img/zigzag-fill-desktop.svg) 0 0 100%
+    border-bottom: 20px solid #fff
+    border-image-repeat: round
+    bottom: 0
+    width: 100%
+    position: absolute
+    @media (max-width: 767px)
+      display: none
+    @media (min-width: 768px)
+      height: 24px
+    @media (min-width: 1050px)
+      height: 34px
+  &__bg
+    background: url("@img/hero-desktop.png") center center/cover no-repeat $bgColor
+    max-height: 746px
+    min-height: 746px
+    max-width: $containerWidth
+    margin-top: -20px
+    margin: 0 50px !important
+    @media (max-width: 767px)
+      max-height: 373px
+      min-height: 373px
+      margin: 0 auto !important
+    @media (min-width: 768px)
+      margin: 0
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: auto
+    max-height: 746px
+    margin: 0 auto
+    width: 100%
+  &__title
+    width: 290px
+    margin: 0 auto
+    text-align: center
+    @media (min-width: 768px)
+      width: 700px
+  &__title-value
+    height: 300px
+    padding-top: 90px
+    font-style: normal
+    font-weight: 700
+    font-size: 27px
+    line-height: 30px
+    @media (min-width: 768px)
+      padding-top: 158px
+      font-size: 53px
+      line-height: 57px
+  &__items
+    display: flex
+    flex-direction: column
+    color: #fff
+    max-width: 1050px
+    margin: 0 auto
+    width: 100%
+    @media (min-width: 768px)
+      flex-direction: row
+  &__item-title
+    width: 130px
+    font-style: normal
+    font-weight: 700
+    font-size: 19px
+    line-height: 24px
+  &__item-img
+    display: flex
+    width: 60px
+    justify-content: center
+  &__item-first
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 20px 27px
+    @media (min-width: 768px)
+      width: 100%
+  &__item-second
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 20px 27px
+    @media (min-width: 768px)
+      width: 100%
+  &__ico-first
+    width: 40px
+    height: 62px
+  &__ico-second
+    width: 60px
+    height: 60px
+//! /.hero
+
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

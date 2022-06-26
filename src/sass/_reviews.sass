@@ -1,1 +1,128 @@
 .reviews
+    &__bg
+        @media (min-width: 768px)
+            background: url('../img/review-bg.png') no-repeat
+            min-height: 457px
+            padding-top: 82px
+        @media (min-width: 1150px)
+            background-position-x: $paddingDesktop !important
+    &__inner
+        @media (min-width: 768px)
+            display: flex
+            flex-direction: column
+        @media (min-width: 1150px)
+            margin-left: 175px
+    &__slider
+        width: 100%
+        height: 100%
+        @media (min-width: 768px)
+            order: 3
+    &__item
+        font-size: 18px
+        background: #fff
+        /* Center slide text vertically */
+        display: -webkit-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        -webkit-justify-content: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        -webkit-align-items: center
+        flex-direction: column !important
+        align-items: flex-start
+        @media (min-width: 768px)
+            background: transparent
+    &__title
+        font-style: normal
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        margin-bottom: 14px
+        @media (min-width: 768px)
+            order: 1
+            font-size: 43px
+            line-height: 50px
+            margin: 0
+        @media (min-width: 1150px)
+            font-size: 53px
+            line-height: 57px
+    &__btn
+        font-size: 18px
+        mix-blend-mode: normal
+        @media (min-width: 768px)
+            width: 175px
+            margin-left: auto
+            order: 2
+            display: block
+            position: relative
+            top: -52px
+    &__item-description
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 30px
+        @media (min-width: 768px)
+            margin-bottom: 61px
+    &__item-title
+        font-style: normal
+        font-weight: 700
+        font-size: 17px
+        line-height: 24px
+    &__item-link
+        font-style: normal
+        font-weight: 400
+        font-size: 17px
+        line-height: 30px
+        color: #444444
+    &__author
+        margin-bottom: 30px
+        @media (min-width: 768px)
+            margin: 0
+    &__nav
+        margin-bottom: 38px
+        @media (min-width: 768px)
+            position: relative
+            top: -58px
+            width: 170px
+            margin-left: auto
+            margin-bottom: 0
+    &__btn-next,
+    &__btn-prev
+        position: relative !important
+        @media (min-width: 768px)
+            border: 0
+    &__btn-next::after,
+    &__btn-prev::after
+        color: transparent !important
+        font-size: 18px
+    &__btn-next
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='50' height='26' viewBox='0 0 50 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z' fill='black'/%3e%3c/svg%3e ") !important
+        background: #fff
+        background-repeat: no-repeat
+        background-position: center center
+        width: 50%
+        height: 52px
+        border: 1px solid #ececec
+        right: 0
+        margin-left: 50%
+        top: 30px
+    &__btn-prev
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='50' height='26' viewBox='0 0 50 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z' fill='black'/%3e%3c/svg%3e") !important
+        background: #fff
+        background-repeat: no-repeat
+        background-position: center center
+        width: 50%
+        height: 52px
+        border-left: 1px solid #ececec
+        border-top: 1px solid #ececec
+        border-bottom: 1px solid #ececec
+        left: 0
+//! /.reviews
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

@@ -1,0 +1,111 @@
+.contacts
+    &__inner
+        display: flex
+        flex-direction: column
+        @media (min-width: 1150px)
+            flex-direction: row
+            justify-content: space-between
+    &__title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding-bottom: 28px
+        @media (min-width: 768px)
+            align-items: center
+            padding-bottom: 40px
+        @media (min-width: 1150px)
+            justify-content: flex-start
+    &__title-value
+        font-style: normal
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        @media (min-width: 768px)
+            font-size: 43px
+            line-height: 50px
+        @media (min-width: 1150px)
+            font-size: 53px
+            line-height: 57px
+    &__ico
+        display: none
+        @media (min-width: 768px)
+            display: block
+        @media (min-width: 1150px)
+            order: -1
+            margin-right: 64px
+            margin-left: 63px
+    &__info
+        display: flex
+        flex-direction: column
+        margin-bottom: 62px
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 24px
+        color: #444444
+        @media (min-width: 768px)
+            flex-direction: row
+            font-size: 17px
+            line-height: 30px
+        @media (min-width: 1150px)
+            flex-direction: column
+            position: relative
+            left: 174px
+    &__price
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 700
+        font-size: 17px
+        line-height: 24px
+        text-align: center
+        color: #444444
+    &__characters
+        width: 100%
+        color: #444444
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 20px
+        margin-bottom: 50px
+    &__characters-content
+        vertical-align: top
+    &__characters-list-item
+        margin-bottom: 18px
+        &:last-child
+            margin-bottom: 0
+    &__map
+        position: relative
+        left: -30px
+        width: calc(100% + 60px)
+        height: 454px
+        z-index: 1
+        @media (min-width: 768px)
+            left: -50px
+            width: calc(100% + 100px)
+            height: 457px
+        @media (min-width: 1150px)
+            position: static
+            width: 527px
+            height: 457px
+    &__btn
+        align-items: center
+        display: flex
+        flex-direction: column
+        order: 5
+        margin: 42px auto 0 auto
+        width: 100%
+        @media (min-width: 768px)
+            align-self: center
+            width: 230px
+        @media (min-width: 1150px)
+            position: relative
+            bottom: 98px
+            margin-left: calc( -230px - 119px)
+            width: 230px
+//! /.contacts
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

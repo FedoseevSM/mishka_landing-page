@@ -2,12 +2,24 @@
 .container
   margin: 0 auto
   max-width: $containerWidth
-  padding: 0 50px
+  padding: 0 $paddingDesktop
   // +  2*$containerPadding
   // padding: 0 $containerPadding
+  @media (max-width: 767px)
+    padding: 0 $paddingMobile
 .row
   display: flex
   flex-direction: row
 .column
   display: flex
   flex-direction: column
+.container-form
+  margin: 0 auto
+  max-width: $containerFormWidth
+  padding: 0 $paddingDesktop
+  @media (max-width: 767px)
+    padding: 0 $paddingMobile
+.section
+  padding: $paddingMobile 0
+  @media (min-width: 768px)
+    padding: $paddingDesktop 0

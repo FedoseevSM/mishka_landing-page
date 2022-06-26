@@ -1,0 +1,146 @@
+.product
+    padding-top: 0 !important
+    &__inner
+        display: flex
+        flex-direction: column
+        @media (min-width: 768px)
+            flex-direction: row
+        @media (min-width: 1150px)
+            justify-content: space-between
+    &__picture
+        order: 4
+        margin-bottom: 25px
+        display: flex
+        margin: 0
+        @media (min-width: 768px)
+            order: 3
+    &__picture-img
+        width: 100%
+        @media (min-width: 768px)
+            vertical-align: top
+            min-width: 334px
+    &__img-1
+        @media (max-width: 767px)
+            display: none
+        @media (min-width: 768px)
+            display: block
+    &__img-2
+        @media (min-width: 768px)
+            display: none
+    &__title
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 18px
+        @media (min-width: 768px)
+            flex-direction: row
+            margin: 0
+        @media (min-width: 1150px)
+            justify-content: flex-start
+            position: relative
+            top: 115px
+            align-items: center
+            // margin-bottom: 60px
+    &__title-value
+        font-style: normal
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        margin-bottom: 4px
+        @media (min-width: 768px)
+            font-weight: 700
+            font-size: 43px
+            line-height: 50px
+            margin: 0
+        @media (min-width: 1150px)
+            font-size: 53px
+            line-height: 57px
+    &__title-info
+        font-style: normal
+        font-weight: 700
+        font-size: 17px
+        line-height: 20px
+        text-transform: uppercase
+        @media (min-width: 768px)
+            width: 100px
+            text-align: center
+            margin-bottom: 60px
+        @media (min-width: 1150px)
+            order: -1
+            width: 100px
+            margin-right: 43px
+            margin-left: 32px
+            margin-bottom: 0
+    &__info
+        display: flex
+        flex-direction: column
+        @media (min-width: 1150px)
+            position: relative
+            top: 150px
+    &__info-text
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 24px
+        color: #444444
+        margin-bottom: 28px
+        @media (min-width: 768px)
+            font-size: 17px
+            line-height: 30px
+            margin-top: 0
+    &__price
+        font-style: normal
+        font-weight: 700
+        font-size: 17px
+        line-height: 24px
+        text-align: center
+        color: #444444
+        margin-bottom: 25px
+        @media (max-width: 767px)
+            margin-top: 18px
+        @media (min-width: 768px)
+            font-size: 20px 
+            line-height: 24px
+    &__characters
+        width: 100%
+        color: #444444
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 20px
+        margin-bottom: 41px
+        border-spacing: 0
+        td
+            border-bottom: 1px solid #ECECEC
+            padding: 14px 0
+    &__buy
+        align-items: center
+        display: flex
+        flex-direction: column
+        order: 5
+        margin-top: auto
+        @media (min-width: 768px)
+            order: 2
+    &__btn
+        font-size: 18px
+        line-height: 20px
+        mix-blend-mode: normal
+        width: 100%
+    &__about
+        display: flex
+        flex-direction: column !important
+        @media (min-width: 768px)
+            display: flex
+            flex-direction: row
+            margin-right: 42px
+        @media (min-width: 1150px)
+            width: 292px
+            position: relative
+            left: 175px
+//! /.product
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

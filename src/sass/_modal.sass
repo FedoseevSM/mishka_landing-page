@@ -1,0 +1,96 @@
+.overlay
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, .5)
+    z-index: 20
+    transition: .3s all
+//! /.overlay
+.modal
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    /* Скрываем окна  */
+    opacity: 0
+    visibility: hidden
+    /*  Установаем ширину окна  */
+    width: 100%
+    max-width: 566px
+    /*  Центрируем и задаем z-index */
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 30 // Должен быть выше чем у подложки
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2)
+    text-align: center
+    padding: 46px 30px
+    background-color: #fff
+    transition: 0.3s all
+    &__title
+        width: 163px
+        font-style: normal
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        text-transform: uppercase
+        margin-bottom: 14px
+        @media (max-width: 767px)
+            width: 381px !important
+    &__description
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 30px
+        color: #444
+        margin-bottom: 21px
+    &__characters
+        margin-bottom: 31px
+//! /.modal
+.modal.active,
+.overlay.active
+    opacity: 1
+    visibility: visible
+//! /.active
+.checkbox-btn
+    display: inline-block
+    margin: 0 2px 0 0
+    user-select: none
+    position: relative
+    &:last-child
+        margin: 0 !important
+    input[type=checkbox] 
+        z-index: -1
+        opacity: 0
+        display: block
+        width: 0
+        height: 0
+    &__value
+        display: inline-block
+        cursor: pointer
+        padding: 16px 0
+        border: 2px solid rgba(68,68,68, 0.1)
+        transition: background 0.2s ease
+        font-style: normal
+        font-weight: 700
+        font-size: 17px
+        line-height: 16px
+        text-transform: uppercase
+        color: #444
+        width: 82px
+        height: 52px
+        @media (min-width: 768px)
+            width: 112px
+    input[type=checkbox]:not(:checked):hover + span 
+        border: 2px solid rgba(68, 68, 68, 0.3)
+//! /.checkbox-btn
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)
