@@ -1,4 +1,5 @@
 .header
+  min-width: 320px
   position: relative
   overflow-x: hidden
   overflow-y: hidden
@@ -7,6 +8,14 @@
   top: 0
   left: 0
   width: 100%
+  z-index: 2
+  @media (max-width: 767px)
+    background-color: #fff
+    border-bottom: 1px solid #ECECEC
+  @media (min-width: 768px)
+    max-height: 175px !important
+    height: 175px 
+  @media (min-width: 1150px)
   &__container
     max-width: 100%
     width: 100%
@@ -19,26 +28,51 @@
   &__logo
     align-self: center
     margin: 0 auto
-    &_wrapper
-      width: 100%
-      order: 1
-      position:  relative
-      padding: 22px 30px
-      justify-content: space-between
-    &_svg
-      width: 149px
-      height: 72px
-      display: block
-    &_text
-      fill: $black
-    &_bg
+    @media (min-width: 768px)
+      margin: 0
+  &__logo-wrapper
+    width: 100%
+    order: 1
+    position: relative
+    // padding: 22px 0
+    height: $headerHeightDesktop
+    justify-content: space-between
+    @media (max-width: 767px)
+      padding: 0 $paddingMobile
+      height: $headerHeightMobile
+    @media (min-width: 768px)
+      position: absolute
+      border-bottom: 1px solid #ECECEC
+      background-color: #fff
+    @media (min-width: 1150px)
+      justify-content: center
+  &__logo-svg
+    width: 149px
+    height: 72px
+    display: block
+    margin-left: 15px
+    @media (min-width: 768px)
+      margin-left: 28px
+    @media (min-width: 1150px)
+      margin-left: 0
+      margin-right: 7px
+  &__logo-text
+    fill: #000
+    @media (min-width: 768px)
+      fill: #fff
+  &__logo-bg
+    fill: transparent
+    @media (min-width: 768px)
+      fill: #000
+  &__logo-bg2
+    fill: transparent
+    @media (min-width: 1150px)
+      fill: #000
+  &_logo-underline
+    fill: #000
+    @media (min-width: 768px)
       fill: transparent
-    &_bg2
-      fill: transparent
-    &_underline
-      fill: $black
   &__link
-    font-family: 'Open Sans'
     font-style: normal
     font-weight: 700
     font-size: 17px
@@ -46,9 +80,16 @@
     color: $black
     display: block
     padding: 28.5px 5px 26.5px calc(50% - 105px)
-    position: relitve
     border-top: 1px solid #ECECEC
     flex: 1 1 100%
+    @media (min-width: 768px)
+      padding: 0
+      display: inline-block
+      border: 0
+      font-size: 17px
+      flex: 0 0 auto
+    @media (min-width: 1150px)
+      font-size: 17px
   &__burger
     width: 20px
     height: 14px
@@ -68,7 +109,7 @@
       top: 0
     &::after
       bottom: 0
-    &_line,
+    .burger__burger-line,
     &::after,
     &::before
       content: ""
@@ -83,44 +124,180 @@
       transition: transform .3s ease, opacity .3s ease, height .4s ease, top .3s ease
       opacity: 1
       transform-origin: center
-  &._active &__burger
+    @media (min-width: 768px)
+      display: none
+  ._active &__burger
     transform: rotate(45deg)
-    &_line
+    .burger__burger-line
       transform: rotate(90deg)
     &::after
       bottom: calc(50% - 1px)
       opacity: 1
     &::before
       display: none
-      
   &__nav
     order: 2
     width: 100%
     background-color: #fff
-  &__nav span
-    margin-left: 12px
-
+    @media (max-width: 767px)
+      flex-wrap: wrap
+    @media (min-width: 768px)
+      flex-wrap: no-wrap
+      margin-top: 21px
+      width: 400px
+      margin-right: auto
+      background-color: transparent
+      z-index: 5
+      a
+        margin-left: 0 !important
+      // span
+      //   margin-left: 0
+    @media (min-width: 1150px)
+      margin-top: -57px
   &__cart
     order: 3
     width: 100%
     background-color: #fff
-  &__cart span
-    padding-left: 12px
-    
-
-.nav
-  &__link
-    
-.cart
-  &__link
-    &_text
-      position: relative
-    &_svg
+    span
+      padding-left: 19px
+    @media (max-width: 767px)
+      flex-wrap: wrap
+    @media (min-width: 768px)
+      display: flex
+      height: $headerHeightDesktop
+      order: -1
+      background-color: transparent
+      flex-wrap: no-wrap !important
+      flex-direction: row
+      width: 387px
+      // position: relative
+      // top: 45px
+      margin-left: auto
+      z-index: 5
+  &__subnuv
+    @media (max-width: 767px)
+      display: none
+    @media (min-width: 768px)
+      width: 100%
+      max-width: 1150px
+      justify-content: space-between
       position: absolute
-      top: calc(50% + 1px)
-      left: -30px
-      transform: translateY(-50%)
-      fill: $black
-      opacity: .2
-      width: 18px
-      height: 18px
+      top: 110px
+      padding: 0 50px
+  &__subnuv-block
+    @media (min-width: 768px)
+      display: none
+    @media (min-width: 1150px)
+      display: inline-block
+      line-height: 15px
+  &__shipping
+    font-style: normal
+    font-weight: 400
+    font-size: 15px
+    line-height: 24px
+    color: #444444
+    @media (min-width: 768px)
+      margin-left: auto
+//! /.header
+.cart
+  &__link-text
+    position: relative
+  &__link-svg
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    // fill: $black
+    // opacity: .2
+    left: -30px
+    width: 18px
+    height: 18px
+  &__ico-search
+    width: 18px
+    height: 18px
+    left: auto !important
+  &__ico-basket
+    width: 21px
+    height: 18px
+  &__search-one
+    @media (min-width: 768px)
+      display: none
+  &__search-two
+    display: none
+    margin-left: auto
+    align-self: center
+    @media (min-width: 768px)
+      display: inline-block
+      margin-right: 50px
+    //   margin-left: auto
+      // margin-left: auto
+      // max-width: 5px
+      // &:before 
+      //   content: ""
+      //   position: absolut
+      //   left: auto
+      //   top: 52px
+      //   width: 100%
+      //   height: 1px
+      //   background: #000
+  &__basket
+    @media (min-width: 768px)
+      align-self: center
+      max-width: 207px
+      margin-left: auto
+  &__border
+    @media (min-width: 768px)
+      &::before
+        content: ''
+        width: 1px
+        height: $headerHeightDesktop
+        order: -1
+        top: 0
+        background-color: #ececec
+        position: absolute
+        display: inline-block
+        margin-left: 68px
+      &::after
+        content: ''
+        width: 1px
+        height: $headerHeightDesktop
+        margin-left: 20px
+        top: 0
+        background-color: #ececec
+        position: absolute
+        display: inline-block
+        margin-left: -33px
+//! /.cart
+.nav
+  span
+    margin-left: 19px
+    @media (min-width: 768px)
+      margin: 0
+  &__sub
+    @media (min-width: 1150px)
+      font-size: 15px !important
+  &__link
+    @media (min-width: 768px)
+      font-size: 15px
+      margin-right: 37px
+      &:last-child
+        margin: 0
+    @media (min-width: 1150px)
+      font-size: 17px
+      margin-right: 58px
+  &__border
+    @media (min-width: 1150px)
+      margin-right: 71px
+      &::after
+        content: ''
+        width: 1px
+        height: $headerHeightDesktop
+        margin-left: 35px
+        top: 0
+        background-color: #ececec
+        position: absolute
+        display: inline-block
+//! /.nav
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)

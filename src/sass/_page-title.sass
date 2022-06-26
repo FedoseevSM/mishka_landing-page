@@ -1,0 +1,46 @@
+.page-title
+  display: flex
+  justify-content: center
+  width: auto
+  background-color: #F9F9F9
+  border-image: url(../img/zigzag-fill-desktop.svg) 0 0 100%
+  border-bottom: 20px solid #fff
+  border-image-repeat: round
+  @media (max-width: 767px)
+    border: 0
+  &__inner
+    background: $bgColor
+    max-height: 255px
+    margin-top: -20px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: auto
+    max-height: 746px
+    width: 100%
+    @media (max-width: 767px)
+      max-height: 226px
+      margin: 0 auto !important
+    @media (min-width: 768px)
+      margin: 0
+      max-height: 255px
+  &__title
+    height: 300px
+    padding-top: 90px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 27px
+    line-height: 30px
+    margin: 0 auto
+    text-align: center
+    @media (min-width: 768px)
+      padding-top: 97px
+      font-size: 53px
+      line-height: 57px
+      width: 700px
+//! /.page-title
+
+// @media (max-width: 767px)
+// @media (min-width: 768px)
+// @media (min-width: 1150px)
