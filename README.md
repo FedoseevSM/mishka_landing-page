@@ -8,4 +8,4 @@
 > - **04.07** Исправил отображение модальных окон
 > - **08.07** Убран конфликт в .js файле, создано несколько бандлов
 
-**GitHub Pages:** https://samgxlden.github.io/mishka_landing-page/
+**GitHub Pages:** https://fedoseevsm.github.io/mishka_landing-page
